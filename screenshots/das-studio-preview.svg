@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="100%" stop-color="#0d1422"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141f33"/>
+      <stop offset="100%" stop-color="#09101d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#uiBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1000" height="55" fill="url(#headerGrad)" stroke="#1e2d48" stroke-width="1"/>
+  <circle cx="25" cy="27" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="27" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="27" r="6" fill="#10b981"/>
+
+  <text x="95" y="33" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">🛰️ DASForge Pro — CCSDS 871.0-M-1 SOIS Device Access Service Studio</text>
+  <rect x="740" y="16" width="130" height="24" rx="4" fill="rgba(0, 229, 255, 0.15)" stroke="#00e5ff" stroke-width="1"/>
+  <text x="805" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#00e5ff" text-anchor="middle">10/10 PASS CERTIFIED</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(30, 75)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="220" height="65" rx="6" fill="#131c2d" stroke="#22324e"/>
+    <text x="15" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Active Onboard Devices</text>
+    <text x="15" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#10b981">3 Physical Devices</text>
+
+    <!-- Card 2 -->
+    <rect x="240" y="0" width="220" height="65" rx="6" fill="#131c2d" stroke="#22324e"/>
+    <text x="255" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Subnetwork Bus Multiplex</text>
+    <text x="255" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#00e5ff">SpW / 1553B / CAN</text>
+
+    <!-- Card 3 -->
+    <rect x="480" y="0" width="220" height="65" rx="6" fill="#131c2d" stroke="#22324e"/>
+    <text x="495" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Last Transaction Status</text>
+    <text x="495" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#38bdf8">SUCCESS (TID #1042)</text>
+
+    <!-- Card 4 -->
+    <rect x="720" y="0" width="220" height="65" rx="6" fill="#131c2d" stroke="#22324e"/>
+    <text x="735" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Round-Trip Bus Latency</text>
+    <text x="735" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#f59e0b">3.2 ms (Nominal)</text>
+  </g>
+
+  <!-- Left: Device Registry & Active Bus Visualizer -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="550" height="450" rx="8" fill="#0b121e" stroke="#1c2b42" stroke-width="1.5"/>
+    <rect x="0" y="0" width="550" height="35" rx="8" fill="#131c2c"/>
+    <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Spacecraft Onboard Physical Device Registry (§3.2)</text>
+
+    <!-- Table Header -->
+    <rect x="15" y="50" width="520" height="25" fill="#162238"/>
+    <text x="25" y="67" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">PHYSICAL DEVICE ID</text>
+    <text x="195" y="67" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">SUBNETWORK BUS</text>
+    <text x="350" y="67" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">HARDWARE ADDR</text>
+    <text x="475" y="67" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">STATUS</text>
+
+    <!-- Row 1 -->
+    <rect x="15" y="80" width="520" height="45" fill="#070c14" stroke="#18253a"/>
+    <text x="25" y="103" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#00e5ff">STAR-TRACKER-A</text>
+    <text x="25" y="117" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" fill="#64748b">Celestial Optical Sensor</text>
+    <text x="195" y="107" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">SpaceWire / RMAP</text>
+    <text x="350" y="107" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">LA: 0x32, Key: 0x40</text>
+    <rect x="470" y="93" width="55" height="20" rx="3" fill="#064e3b"/>
+    <text x="497" y="107" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#10b981" text-anchor="middle">ONLINE</text>
+
+    <!-- Row 2 -->
+    <rect x="15" y="130" width="520" height="45" fill="#070c14" stroke="#18253a"/>
+    <text x="25" y="153" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#f59e0b">RW-PITCH-01</text>
+    <text x="25" y="167" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" fill="#64748b">ADCS Pitch Wheel Actuator</text>
+    <text x="195" y="157" font-family="JetBrains Mono, monospace" font-size="10" fill="#f59e0b">MIL-STD-1553B</text>
+    <text x="350" y="157" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">RT: 4, Subaddress: 1</text>
+    <rect x="470" y="143" width="55" height="20" rx="3" fill="#064e3b"/>
+    <text x="497" y="157" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#10b981" text-anchor="middle">ONLINE</text>
+
+    <!-- Row 3 -->
+    <rect x="15" y="180" width="520" height="45" fill="#070c14" stroke="#18253a"/>
+    <text x="25" y="203" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#34d399">BATTERY-BMS</text>
+    <text x="25" y="217" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" fill="#64748b">Li-Ion Battery Management</text>
+    <text x="195" y="207" font-family="JetBrains Mono, monospace" font-size="10" fill="#34d399">CANopen Bus</text>
+    <text x="350" y="207" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">Node ID: 7 (COB 0x607)</text>
+    <rect x="470" y="193" width="55" height="20" rx="3" fill="#064e3b"/>
+    <text x="497" y="207" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#10b981" text-anchor="middle">ONLINE</text>
+
+    <!-- Interactive Execution Console -->
+    <rect x="15" y="240" width="520" height="195" rx="6" fill="#070c14" stroke="#1e2d48"/>
+    <text x="25" y="263" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#00e5ff">Live DAS Primitive Transaction Terminal:</text>
+    <text x="25" y="285" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">&gt; ACQUIRE_FROM_DEVICE.request(TID=1042, Device="STAR-TRACKER-A", Addr=0x0010)</text>
+    <text x="25" y="303" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">  - Resolved Protocol: SpaceWire RMAP Non-Incrementing Memory Read</text>
+    <text x="25" y="321" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">  - Header CRC: 0xB7 (Polynomial 0x07 Verified)</text>
+    <text x="25" y="339" font-family="JetBrains Mono, monospace" font-size="10" fill="#10b981">&gt; ACQUIRE_FROM_DEVICE.indication(TID=1042, Status=SUCCESS, DataValue=12450)</text>
+    <text x="25" y="357" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">&gt; COMMAND_DEVICE.request(TID=1043, Device="RW-PITCH-01", Addr=0x0001, Val=3800)</text>
+    <text x="25" y="375" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">  - Resolved Protocol: MIL-STD-1553B Command Word 0x2422 (RT 4 / SA 1)</text>
+    <text x="25" y="393" font-family="JetBrains Mono, monospace" font-size="10" fill="#10b981">&gt; COMMAND_DEVICE.indication(TID=1043, Status=SUCCESS, Result=REGISTER_UPDATED)</text>
+    <text x="25" y="415" font-family="JetBrains Mono, monospace" font-size="9" fill="#64748b">Zero bus protocol logic exposed to flight control application entities (§3.1).</text>
+  </g>
+
+  <!-- Right: Subnetwork Protocol Inspector & Scorecard -->
+  <g transform="translate(600, 160)">
+    <rect x="0" y="0" width="370" height="450" rx="8" fill="#0b121e" stroke="#1c2b42" stroke-width="1.5"/>
+    <rect x="0" y="0" width="370" height="35" rx="8" fill="#131c2c"/>
+    <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Subnetwork Wireframe Inspector (DAP)</text>
+
+    <!-- Wireframe Box -->
+    <rect x="15" y="50" width="340" height="240" rx="4" fill="#060912" stroke="#1e2d48"/>
+    <text x="25" y="75" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">{</text>
+    <text x="35" y="95" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"subnetwork_bus": <tspan fill="#34d399">"SpaceWire / RMAP"</tspan>,</text>
+    <text x="35" y="115" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"pdu_type": <tspan fill="#34d399">"RMAP_READ_REQUEST"</tspan>,</text>
+    <text x="35" y="135" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"target_logical_addr": <tspan fill="#00e5ff">"0x32"</tspan>,</text>
+    <text x="35" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"protocol_id": <tspan fill="#f59e0b">"0x01"</tspan> <tspan fill="#64748b">(RMAP)</tspan>,</text>
+    <text x="35" y="175" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"memory_address": <tspan fill="#00e5ff">"0x000010"</tspan>,</text>
+    <text x="35" y="195" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"header_crc": <tspan fill="#10b981">"0xB7"</tspan> <tspan fill="#64748b">(Polynomial 0x07)</tspan>,</text>
+    <text x="35" y="215" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"wire_hex": <tspan fill="#38bdf8">"32014C40420100000010000004B7"</tspan>,</text>
+    <text x="35" y="235" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"integrity_verdict": <tspan fill="#10b981">"VALID_CRC_PASS"</tspan></text>
+    <text x="25" y="255" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">}</text>
+
+    <!-- Operational Verdict -->
+    <rect x="15" y="305" width="340" height="130" rx="4" fill="#064e3b" stroke="#10b981"/>
+    <text x="25" y="330" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#ffffff">COMPLIANCE AUDIT VERDICT:</text>
+    <text x="25" y="352" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Status: CCSDS_871_0_DAS_CERTIFIED</text>
+    <text x="25" y="370" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Normative Score: 10/10 PASS (100.0%)</text>
+    <text x="25" y="388" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Abstract Device Indication Delivery: OK</text>
+    <text x="25" y="406" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• SpaceWire, 1553B & CAN Bus Validated</text>
+  </g>
+</svg>
